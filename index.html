@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+		<link rel="stylesheet" type="text/css" media="screen" href="screen.css">
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<script src="jquery-1.8.2.min.js"></script>
+		<script src="script.js"></script>
+		<title>Password Generator</title>
+	</head>
+
+	<body>
+		<div id="generator">
+	
+			<h1>Password Generator</h1>
+			
+			<p>
+				<span id="char_1">A</span>
+				<span id="char_2">a</span>
+				<span id="char_3">a</span>
+				<span id="char_4">A</span>
+				<span id="char_5">a</span>
+				<span id="char_6">a</span>
+				<span id="char_7">#</span>
+				<span id="char_8">#</span>
+				<span id="char_9">_</span>
+				<span id="char_10">_</span>
+				<span id="char_11">_</span>
+				<span id="char_12">_</span>
+				<span id="char_13">_</span>
+				<span id="char_14">_</span>
+				<span id="char_15">_</span>
+				<span id="char_16">_</span>
+			</p>
+
+			<div id="password_div"></div>
+			
+			<button onclick="generatePassword()">Generate!</button>
+		
+		</div>
+		
+		<div id="info">
+			<h2>About</h2>
+			<p>This page generates random passwords that actually can be remembered.</p>
+			<p>Create your own password standard by clicking the characters to the left,
+			or use existing standards by clicking the links below.</p>
+		
+			<h2>Explanation</h2>
+			<p>
+				A = Uppercase letter<br>
+				a = Lowercase letter<br>
+				# = Numeric character<br>
+				$ = Special character<br>
+				? = Random character
+			</p>
+		
+			<h2>Standards</h2>
+			<ul>
+				<li><a href="index.html?standard=AaaAaa++">AaaAaa##</a></li>
+				<li><a href="index.html?standard=AaaAaa++$">AaaAaa##$</a></li>
+				<li><a href="index.html?standard=AaaaAaaa++">AaaaAaaa##</a></li>
+				<li><a href="index.html?standard=AaaaAaaa++$">AaaaAaaa##$</a></li>
+				<li><a href="index.html?standard=aaaaaa">aaaaaa</a></li>
+				<li><a href="index.html?standard=++++++">######</a></li>
+				<li><a href="index.html?standard=??????">??????</a></li>
+				<li><a href="index.html?standard=????????">????????</a></li>
+			</ul>
+			
+			<p><em>By Tony Gustafsson</em></p>
+		</div>
+		
+	</body>
+
+</html>
